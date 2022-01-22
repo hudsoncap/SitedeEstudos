@@ -15,8 +15,10 @@
 
     <h1>Estudos HTML</h1>
 
-    <p class="phead"> <a href="../index.html" target="_self" rel="prev">Pagina Inicial</a> 
-      <a href="../frontend/pag004.html" target="_self" rel="prev">Pagina de CSS</a>  <a href="../frontend/pag005.html" target="_self" rel="prev">Pagina de JavaScript</a> <span style="float: right;" > <a href="../frontend/pag007.html">HTML intermediário</a> </span> </p>
+      <p class="phead"> 
+        <p class="phead" style=""><a class="ahead" href="../index.html" target="_self" rel="prev">Pagina Inicial</a></p>
+       <p class="phead"> <a class="ahead" href="../frontend/pag004.html" target="_self" rel="prev">Pagina de CSS</a> <p> 
+        <p class="phead"><a class="ahead" href="../frontend/pag005.html" target="_self" rel="prev">Pagina de JavaScript</a></p>
     </header>
 
     <hr>   
@@ -24,6 +26,9 @@
     <hr>
 
     <main>
+
+      <p style="text-align: left; padding: 5px 35px; " > <a href="../frontend/pag007.html">HTML intermediário</a> </p>
+      <hr>
     
       <h2>O que é HTML?</h2>
 
@@ -86,14 +91,14 @@
         <pre>
           <code>
     function Avaliar(){
-      let nota = window.prompt('Nota de 1 a 5')
-  
+      let nota = window.prompt
+      ('Nota de 1 a 5')  
         if (nota >= 1 && nota <= 5 ) {
-              alert(`Sua Nota: ${nota}`)
-              alert('Obrigado!!!')
+          alert(`Sua Nota: ${nota}`)
+           alert('Obrigado!!!')
         }
         else {
-              alert('[ERRO] Valor Invalido!!!')
+          alert('[ERRO] Valor Invalido!')
         }
             }
   
@@ -223,11 +228,14 @@
       <p> <pre>
           <code>
   &lt;picture>
-    &lt;source media="(max-width:750px" srcset="paisagem-p.png"
+    &lt;source media="(max-width:750px"
+     srcset="paisagem-p.png"
      type="image/png">
-    &lt;source media="(max-width:1050px" srcset="paisagem-m.png"
+    &lt;source media="(max-width:1050px"
+     srcset="paisagem-m.png"
      type="image/png"> 
-    &lt;img  src="Imagemaqui" alt="imagem flexivel">             
+    &lt;img  src="Imagemaqui" 
+    alt="imagemflexivel">             
   &lt;/picture>
           </code>
       </pre>                
@@ -246,19 +254,28 @@
       <h2>Trabalhando com Áudio</h2>
        <p> Tipos de Audio:MP3, WAV ,OGG</p>
        <h3>Audio Comum</h3>
-       <p> <code>&lt;audio src="../Audios/Meditation.mp3" controls autoplay>
-         &lt;/audio> </code>  </p>
+       <p> <code>
+ &lt;audio src="../Audios/audio.mp3"
+  controls autoplay>
+  &lt;/audio> </code>  </p>
 
        <h3>Teste com varios tipos de Audio, Não Usar WAV</h3>
        
        <p> <pre>
          <code> 
-          &lt;´audio preload="metadata" autoplay controls loop>
- &lt;source src="../Audios/videogamesoldiers.mp3" type="audio/mp3">
-   &lt;source src="../Audios/cylinder.mp3" type="audio/WAV">        
-   &lt;source src="../Audios/Meditation.mp3" type="audio/OGG">
-   &lt;p>Infelizmente seu navegador não conseguiu reproduzir o 
-   Audio click &lt;a href="../Audios/Meditation.mp3">Aqui</a> para baixar. 
+          &lt;´audio preload="metadata"
+           autoplay controls loop>
+ &lt;source src="../Audios/audio.mp3"
+  type="audio/mp3">
+   &lt;source src="../Audios/cylinder.mp3"
+    type="audio/WAV">        
+   &lt;source src="../Audios/Meditation.mp3"
+    type="audio/OGG">
+   &lt;p>Infelizmente seu navegador
+    não conseguiu reproduzir o 
+   Audio click &lt;a href="../Audios/Meditation
+   .mp3">
+   Aqui</a> para baixar. 
    &lt;/p> <strong><i>PS:Não USAR WAV</i></strong>
  &lt;/audio>
        </code> </pre> </p>
@@ -271,9 +288,10 @@
        <h3>Videos Hospedados no site.</h3>
         <pre>
        <code>
-        &lt;p>
-        &lt;video src="../videos/PP.m4v" controls >&lt;/video>
-        &lt;/p>
+  &lt;p>
+  &lt;video src="../videos/PP.m4v"
+  controls >&lt;/video>
+  &lt;/p>
        </code></pre>
 
        <div class="divvideo">
