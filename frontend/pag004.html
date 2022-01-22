@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link rel="shortcut icon" href="../imagens/logo3.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
+    <title>Estudos CSS</title>
+</head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<body>
+
+      <header>
+      <h1>Estudo CSS</h1>
+      <p class="phead"> <a href="../index.html" target="_self" rel="prev">Pagina Inicial</a> <a href="../frontend/pag002.html" target="_self" rel="prev">Pagina de HTML</a>  <a href="../frontend/pag005.html" target="_self" rel="prev">Pagina de JavaScript</a>  </p></header>
+
+      <hr>   
+      <hr>
+      <hr>
+
+    <main>
+      
+      <h2>O que é CSS?</h2>
+
+       <p>Cascading Style Sheet, mais conhecido como CSS, é uma linguagem de estilos que, assim como o HTML, também não é considerada uma linguagem de programação. Ela é responsável por separar a parte estrutural da aplicação (que ficará nas mãos do HTML) da parte estética.</p>
+
+
+       </code></pre></p>
+      <hr>
+
+      <h2>Corpo Basico CSS:</h2>
+
+      <p><pre><code>
+        &lt;header> 
+
+              &lt;h1> titulo &lt;/h1>
+
+        &lt;/header>
+
+        &lt;main>
+
+              &lt;div> conteudo principal&lt;/div>
+
+        &lt;/main>
+
+        &lt;footer>
+
+              &lt;p>Marca Registrada&copy; .&lt;/p>
+
+        &lt;/footer>
+      </code></pre></p>
+
+      <hr>
+       <h2>Variaveis no CSS:</h2>
+
+       <h3>Exemplos:</h3>
+
+       <p><pre><code>
+         :root {
+           --cor0: #c5ebd6;
+           --cor1: #83e1ad;
+           --cor2: #3ddc84;
+           --cor4: #1a5c37;
+           --cor5: #063d1e;
+
+           --font-padrao: Arial, Verdana, Helvetica, sans-serif;
+         }
+
+         color: var(--cor4)
+         
+       </code></pre></p>
+      <hr>
+
+      <h2>Tags para CSS </h2>
+    
+      <p>Global CSS:  * {} </p>
+      <p>Regra para não ter problema com caracteres especiais: @charset "UTF-8";</p>
+      <hr>
+
+      <h2>Comandos para CSS:</h2>
+      <ul>       
+          <li>height:  altura</li>
+          <li>width:  largura</li>
+          <li>border:  borda</li>
+          <li>padding:  preenchimento (distancia a borda do conteudo)</li>
+          <li>margin:  preenchimento para fora (distancia de uma borda para outra) </li>
+          <li>outline:  contorno externo (borda fora da borda)</li>
+          <li>overflow-wrap: anywhere; : (Força a quebra de linha)</li>
+          <li>overflow-x: hidden : (remove a Barra branca no site Mobile)</li>
+          <li>line-heigth: (espaço entre uma linha pra outra)</li>
+      </ul>
+       <hr>
+      <h2>Tipos de caixa:</h2>
+       
+       <h3>caixa: Box-level</h3>
+      <p><img src="../imagens/box-level.png" alt="boxlevel"></p>
+
+        <h4>Tipos de box-level</h4>
+        <ul> 
+          <li>div</li>
+          <li>h1 - h6</li>
+          <li>p.</li>
+          <li>main</li>
+          <li>header</li>
+          <li>nav</li>
+          <li>article</li>
+          <li>aside</li>
+          <li>footer</li>
+          <li>form</li>
+          <li>video</li>         
+        </ul>
+
+      <h3>caixa: inline-level</h3>
+      <p><img src="../imagens/inline-level.png" alt="inline-level"></p>
+
+      <h4>Tipos de inline-level</h4>
+      <ul> 
+        <li>span</li>
+        <li>a</li>
+        <li>code</li>
+        <li>small</li>
+        <li>strong</li>
+        <li>em</li>
+        <li>sup - sub</li>
+        <li>label</li>
+        <li>button</li>
+        <li>input</li>
+        <li>select</li>
+      </ul>
+       
+      <hr>
+   
+      <h2>Class, id, subclass</h2>
+
+      <h3>Classes HTML e CSS</h3>
+
+      <p>class HTML = . no css (Usar para mais de um comando.)</p>
+      <p>id no HTML = # no css (Não Usar para mais de um comando.)</p>
+      <p>pseudo-class no HTML= class: no css (Usar para momentos como passar o mouse.) </p>
+      <p>pseudo-elemento = :: CSS </p>
+      <p> children = > CSS </p>
+      
+      <ul>
+         <li>podemos usar mais de uma casse por comando</li>
+         <li>tambem podemos usar class e id no mesmo comando (o ID será computado por ultimo)</li>
+      </ul>
+      <h3>tambem podemos usar subclass para ocultar elementos internos e etc, Exemplo abaixo:</h3>
+          <p></p>
+             <pre><code>
+              &lt;h2> 
+                 Passe o Mouse aqui 
+                 &lt;p> Surpresa &lt;/p>
+              &lt;/div>
+
+              h2 > p {
+                display:none;
+              }
+              h2:hover > p {
+                display:block;
+                background-color: red;
+              }
+             </code></pre>          
+
+      <h2 style=" width: 280px; border-radius: 15px; margin: 10px 10px 10px 80px; "> Passe o mouse aqui: 
+         <p> Surpresa!!!</p>
+      </h2>
+      <hr>
+      <h2>Modelos de :hover</h2>
+        <ul>
+          <li>a:visited (Altera quando o objeto foi clicado)</li>
+          <li>a:hover (altera o Objeto quando o Mouse está por cima ou proximo)</li>
+          <li>a:active (altera o Objeto quando ele é Clicado)</li>
+          <li>a::after{content:} (depois de todos os objetos)</li>
+          <li>a::before{content:} (antes de todos os objetos)</li>
+        </ul>
+
+         <hr>
+         <h2>Bordas Decoradas</h2>
+
+         <p><pre><code>
+           h1{
+             border:12px solid black;
+             padding: 10px;
+             border-image-source:url('borda.png');
+             border-image-slice: 27;     //  <strong>
+               (Editar pelo Navegador)</strong>
+             border-image-repeat:reset;
+           }
+         </code></pre></p>
+      <hr>
+
+      <h2>Estudo das Cores </h2>
+
+      <p>PDF Sobre Cores: <a href="../downloads/Cores.pdf" target="_blank" rel="external" type="aplication/pdf">Cores</a></p>
+      
+      <h3>Os tipos de representação de cores são:</h3>
+
+      <p>Hex: hexadecimal </p>
+      <blockquote><code>background-color:: #0000ff</code> </blockquote>
+      <p> RGB:Red,Green e Blue, alfa(transparência) color: RGBA  </p> 
+           
+       <blockquote>
+           <code> background-color: rgba(0, 0, 0, 0.233)</code>
+       </blockquote>
+
+      <p> HSE: Hue(matrix), Sturation(saturação), Luminosity(Luminosidade) e Alfa(Transparência) 
+      </p> <blockquote><code> background-color: hsla(0, 0%, 0%, 0.233)</code></blockquote>
+     
+
+      <h3> Tipos de Cores são:</h3>
+
+      <p>Primarias, segundarias e terciarias.</p>     
+      
+      <h3>Sites para ver combinações de cores:</h3>
+      <p> <ul type="circle">
+                  <li>
+                      <a href="https://paletton.com/#uid=1000u0kllllaFw0g0qFqFg0w0aF" target="_blank" rel="nofollow" >Paletron</a>
+                  </li>
+                  <li> <a href="https://color.adobe.com/pt/create/color-wheel" target="_blank" rel="nofollow" >AdobeColors</a></li>
+         <h3 style="margin-left: 1px;">Tipos de regra de harmonia:</h3>
+         
+             <ol type="1">
+                 <li>Análogo</li>
+                 <li>Monocromático</li>
+                 <li>Triade</li>
+                 <li>Complementar</li>
+                 <li>Dividir complementar</li>
+                 <li>Dividir complementar duas vezes</li>
+                 <li>Quadrado</li>
+                 <li>Composto</li>
+                 <li>Sombras</li>
+             </ol>
+      </ul></p>
+      <h3>Usando Gradient no CSS:</h3>
+
+      <p><pre><code>
+        background-image: linear-gradient(to left,
+         red, rgb(255, 81, 0), rgb(255, 136, 0));
+      </code></pre></p>
+
+      <p><pre><code>
+        background-image: linear-gradient(45deg,
+         red 1%, rgb(255, 81, 0), rgb(255, 136, 0));
+      </code></pre></p>
+
+      <p><pre><code>
+        background-image: radial-gradient(circle,
+         red, rgb(255, 81, 0), rgb(255, 136, 0));
+      </code></pre></p>
+      <hr>
+      <h2>Fontes</h2>
+
+      <h3>Usando Link do Google:</h3>
+
+      <p><a href="https://fonts.google.com" target="_blank" rel="nofollow" >GoogleFonts</a></p>
+
+      <p> <pre><code>
+        @import url('https://fonts.googleapis.com/
+        css2?family=Patrick+Hand&display=swap');
+      </code></pre></p>
+
+      <h3>Fontes baixadas.</h3>
+
+      <p><a href="https://www.dafont.com/pt/" target="_blank" rel="nofollow" >dafont.com</a></p>
+
+      <p><pre><code>
+        @font-face{
+         font-family: love;
+         src: url('1fonte') 
+         format('opentype');
+         , url('2 fonte) format('truetype')
+         font-weight: normal;
+         font-style: normal; 
+        }
+      </code></pre></p>
+
+      <h3>Para descobrir as fontes dos sites:</h3>
+      
+      <h4>Extenção google chrome e firefox</h4>
+      <ul><li><p>Fonts Ninja</p></li></ul>
+
+      <h4>Extenção google Opera</h4>
+      <ul><li><p>Font Finder</p></li></ul>
+
+      <h3>Descobrir as fontes de fotos:</h3>
+
+      <p>Sites:</p>
+      <ol>
+        <li> <a href="https://www.whatfontis.com" target="_blank" rel="nofollow">whatfontis.com</a></li>
+        <li> <a href="https://www.fontsquirrel.com" target="_blank" rel="nofollow">fontssquirrel.com</a></li>
+        <li> <a href="https://www.myfonts.com" target="_blank" rel="nofollow">Myfonts.com</a></li>
+      </ol>
+
+
+      <h4>Tipos de format()</h4>
+       <ol> 
+           <li>opentype (otf)</li>
+           <li>truetype (ttf)</li>
+           <li>embedded-opentype</li>
+           <li>truetype-aat (apple Advanced typograph)</li>
+           <li>svg</li>
+       </ol>
+
+      <h3>Medidas Absolutas:</h3>
+
+      <p>cm, mm, in(polegada), px, pt, pc.</p>
+
+      <h3>Medidas Relativas:</h3>
+      <p>em, ex, rem, vw, vh, %,</p>
+      <p><strong>PS:</strong>16px geralmente = 1em.</p>
+
+      <p><ins><strong>Usar px ou em é a recomendação Oficial.</strong></ins></p>
+
+      <h3>Comandos Font:</h3>
+
+      <ul>
+        <li>font-size= tamanho // 1em, 16px</li>
+        <li>font-weight= peso // light, normal, bold, bolder</li>
+        <li>font-style= estilo // italic</li>
+        <li>text-decoration= decoração //underline</li>
+        <li>font-family= familia // arial, etc...</li>
+        <li>font:italic bolder 3em 'Work Sans', sans-serif</li>
+
+      </ul>
+
+
+
+
+
+      <h2>Anatomia e tipo:</h2>
+
+      <p>PDF Sobre anatomia e tipo : <a href="../downloads/Fontes.pdf" target="_blank" rel="external" type="aplication/pdf">Fontes</a></p>
+      
+      <p> <img src="../imagens/anatomiadasfontes.png" alt="anatomia das fontes" style="border: 10px solid black; "></p>
+      <h3>Serifa:</h3>
+      <p> <img src="../imagens/anatomiadasfontesserifa.png" alt="anatomia das fontes" style="border: 10px solid black;"></p>
+      <h3>Anatomia geometricas:</h3>
+      <p> <img src="../imagens/anatomiadasfontesserifa.png" alt="anatomia das fontes" style="border: 10px solid black;"></p>
+      <h3>Anatomia Humanizada:</h3>
+      <p> <img src="../imagens/anatomiahumanizadas.png" alt="anatomia das fontes" style="border: 10px solid black;"></p>
+
+      <h2>Categorias de Fontes:</h2>
+
+      <p> <img src="../imagens/categorias de fontes.png" alt="anatomia das fontes" style="border: 10px solid black;"></p>
+
+    </main>
+
+      <hr>   
+      <hr>
+      <hr>
+      
+    <footer>
+        <p class="pfoot"> <a href="../index.html" target="_self" rel="prev">Pagina Anterior</a>  </p>
+        <strong>Click Para avaliar</strong>  <input type="button" value="Avaliar" onclick="Avaliar()"><br><br>
+          <i>&copy;HudsonADRC</i>
+      </footer>
+
+      <script src="../JavaScript.js"></script> 
+    
+</body>
+</html>

@@ -1,0 +1,202 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap');
+body{
+   
+    font-family: sans-serif;
+    background-image: linear-gradient(to left,#013769 30%,#01203d 50%,#011427 80%);
+   color: rgb(226, 221, 221);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-attachment: fixed;
+    margin: 0px;    
+}
+
+*{margin: 0px;
+  padding: 0px;
+ }
+      
+      .phead{margin-left: -20px; margin-bottom: -25px;}
+
+      .pfoot{text-align: left; margin-top: -23px; margin-left: -50px;}
+      
+      header {
+         background-image: linear-gradient(to top,#013769 20%,#01203d 50%,#011427 80%);
+         color: rgb(226, 221, 221);
+           margin-bottom: none;
+           border-bottom: none;
+           padding-top: 30px;
+           padding-bottom: 30px;
+
+      }
+
+      hr {
+         margin:0px;
+         width: 100%;         
+      }
+ 
+   
+      strong {
+          width: 20px;
+          color: rgb(4, 187, 19);
+      }
+ 
+
+      input {
+         padding: 8px 30px;
+         font-size: 20px;
+         text-align: center;
+         cursor: pointer;
+         outline: none;
+         color: #fff;
+         background-color: #3182ce;
+         border: none;
+         border-radius: 15px;
+         box-shadow: 0 1px rgba(14, 13, 13, 0.527);
+       }
+       input:hover {
+         box-shadow:inset 1px 1px 2px rgba(255,255,255,0.3), 
+         inset 3px 15px 45px rgba(0,0,0,0.2),
+         inset -1px -1px 2px rgba(0,0,0,0.5), 
+         inset -3px -15px 45px rgba(255,255,255,0.1),
+                   2px -2px 12px 2px rgb(3, 143, 224);
+                   transition: 0.0s ease-in;}
+   
+       input:active{
+         background-color: #277fa8;
+         padding: 10px 35px;
+         box-shadow:inset 1px 1px 2px rgba(255,255,255,0.3), 
+         inset 3px 15px 45px rgba(0,0,0,0.2),
+         inset -1px -1px 2px rgba(0,0,0,0.5), 
+         inset -3px -15px 45px rgba(255,255,255,0.1),
+                   2px -2px 12px 2px rgba(0,0,255,1);
+                   transition: 0.0s ease-in;
+                   transform: translateY(4px);}  
+
+      i {
+         font-size: 15px;
+         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+
+      section{
+         text-align: center;
+         justify-content: center;       
+       }
+       
+       h2 {font-size: 30px;
+         padding-left: 10px;
+         padding-top: 10px;
+          }
+       h2 > p {
+            display: none;
+       }
+       h2:hover p {
+            display: block;
+            font-size: 25px;
+            background: red;
+            border-radius: 10px;
+            width: 130px;
+            padding-right: 30px;
+            margin: auto;}
+            
+      
+    
+
+h1{ text-align: center;
+    color: #fcfcfcfd;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 40px; 
+    text-shadow: 10px 10px 20px hsla(0, 0%, 0%, 0.938);
+    padding-bottom: 50px;
+   
+
+}
+
+
+   h2 { 
+        text-shadow: 5px 5px 10px rgba(2, 2, 75, 0.76);
+        margin-left: 1px;
+
+        font-family: 'Luxurious Roman', cursive;
+        text-align: justify;
+        color: #e0a605fd;
+        padding-left: 15px;
+
+   }
+
+   a {
+       text-decoration: none;
+      color: #b46a08;
+      font-size: 19px;
+      padding-right: 30px;
+   }
+
+   a:hover {
+          font-size: 22px;
+          color: rgb(179, 48, 8);
+          text-decoration: underline;
+   }
+   
+   h3 {margin: 7px;
+ 
+      text-align: justify;
+      color: #f3b713fd;
+      padding-left: 20px;
+}
+   h4 { margin-left: 2px;
+      margin-right: 40%;
+
+      color: #e2ab13fd;
+      padding-left: 25px;
+}
+   h5 {margin-left: 10px;
+      margin-right: 40%;
+      padding-left: 30px;
+      color: #dfbd61fd;
+   }
+    
+   p { margin-right: 15%;
+       padding-left: 35px;
+       padding-bottom: 10px;
+}
+ dt {padding-left: 70px;}
+ dd {padding-left: 70px;}
+ol {
+   padding-left: 70px;
+}
+ul {
+   padding-left: 70px;
+}
+li {
+   padding-top: 6px;
+   padding-left: 6px;
+}
+
+.liF {margin-top: -10px;
+      margin-bottom: -10px;}
+
+blockquote {margin: 50px;}
+
+img {
+      max-width: 600px;
+      width: 100%;
+}
+
+video {max-width: 500px;
+        width: 100%;}
+
+.divvideo {
+       max-width: 600px;
+}
+
+iframe {
+        width: 100%;
+}
+
+footer {
+   background-image: linear-gradient(to top,#013769 20%,#01203d 50%,#011427 80%);
+         color: rgb(226, 221, 221);
+     padding: 30px;
+     color: rgb(218, 212, 212);
+     text-align: center;     
+}
+

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link rel="shortcut icon" href="../imagens/logo3.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
+    <title>Estudos Java Script</title>
+</head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<body>
+      <header>
+      <h1>Estudo Java Script</h1>
+      <p class="phead"> <a href="../index.html" target="_self" rel="prev">Pagina Inicial</a> <a href="../frontend/pag002.html" target="_self" rel="prev">Pagina de HTML</a>  </a> 
+        <a href="../frontend/pag004.html" target="_self" rel="prev">Pagina de CSS</a>  </p></header>
+
+        <hr>   
+        <hr>
+        <hr>
+
+      <main>
+        
+      <h2>O que é JavaScript?</h2>
+
+      <p>Para completar a grande tríade do desenvolvimento front-end, temos o Javascript, a única linguagem de programação das 3 tecnologias citadas.</p>
+
+        <p>Você conseguiu perceber que já criamos a estrutura da página com o HTML e já estilizamos os elementos com o CSS. Mas e as funcionalidades dinâmicas que vemos quando abrimos um site, como acontecem?</p>
+        
+        <p>Isso é feito pelo Javascript. Ele adiciona movimento às páginas web, além de permitir o processamento e transformação de dados enviados e recebidos. Ele permite criar conteúdos que se atualizam de forma dinâmica e animada, dando vida às aplicações que antes eram apenas estruturadas com HTML de forma estática.</p>
+        
+        <p>Sempre que vir uma caixinha de alerta apitando em um site, ou um mecanismo de autocomplete em algum campo, saiba que é o Javascript agindo.</p>
+      <hr>
+       
+      <h2>Data Type</h2>
+
+       <h4>Typeof:</h4>
+
+       <p>
+         <ul>
+           <li>Number</li>
+               <ul style="padding-left: 25px;">
+                 <li>infinity</li>
+                    <li>NaN</li>
+              </ul>
+           <li>string</li>
+           <li>boolean</li>
+           <li>null</li>
+           <li>undefined</li>
+           <li>object</li>
+               <ul style="padding-left: 25px;">
+                 <li>Array</li></ul>
+           <li>function</li>
+         </ul>
+       </p>
+               
+       <hr>
+       <h2>Imagens:</h2>
+       <h4>HTML</h4>
+       <p>
+         <pre><code>
+            &lt;div id= 'foto'>
+              &ltimg id= 'imagem' src="manhã.png" 
+              alt="foto do dia">
+            &lt;/div>
+         </code></pre>
+       </p>
+       
+       <h4>JavaScript:</h4>
+
+       <p>
+         <pre><code>
+           img.src = 'tarde.png'
+           document.body.style.background="#c1d7e2"
+              </code></pre>
+       </p>
+
+       <h4>Java Script criar elemento img</h4>
+
+       <p><pre><code>
+         var img= document.createElement('img')
+         img.setAttribute('id','foto')
+
+         img.setAtrribute('src','bebe.png')
+       </code></pre></p>
+       <hr>
+       
+       <h2>JavaScript NewDate:</h2>
+
+       <p><pre><code>
+          var data = new Date()
+          var ano = data.getFullYear()
+          var mes = data.getMounth()
+       </code></pre></p>
+
+
+       
+
+       <hr>
+
+       <h2>Operadores:</h2>
+
+       <h4>Operadores:</h4>
+       <p><ul>
+         <li>aritméticos</li>
+         <li>atribuição</li>
+         <li>relacionais</li>
+         <li>lógicos</li>
+         <li>ternário</li>
+        </ul></p>
+
+        <h4>Relacionais:</h4>
+        <p><ul type= none>
+          <pre>
+          <li class="liF"> >   :    maior </li>
+          <li class="liF"> <   :    menor</li>
+          <li class="liF"> >=  :    maiorouigual</li>
+          <li class="liF"> <=  :   menorouigual</li>
+          <li class="liF"> ==  :   igual </li>
+          <li class="liF"> !=  :   diferente</li></pre>
+        </ul></p>
+
+        <h4>Identidade:</h4>
+
+        <p><ul type= none>
+             <pre>
+             <li> 5 == 5    :  true </li>
+             <li> 5 == '5'  : true </li>
+             <li> 5 ==='5'  : false</li>
+             <li> 5 === 5   : true </li></pre>
+        </ul></p>
+
+        <h4>Precedência:</h4>
+
+        <p><ul>
+            <li>() ** / </li>
+            <li>> < >=</li>
+            <li> ! </li>
+            <li> && </li>
+            <li> || </li>
+        </ul></p>
+      
+       <h4>Lógicos:</h4>
+
+        <p><ul>
+          <li>! = (NÃO)Negação</li>
+          <li> && = (E)conjunção</li>
+          <li> || = (ou)disjunção</li>
+        </ul></p>
+
+        <h4>Ternário:</h4>
+        
+        <p><pre><code>
+           média = 8
+           média >= 7.0 ? "aprovado" : "reprovado"
+              = (aprovado)
+        </code></pre></p>
+ 
+        <hr>
+        <h2>Conversões.</h2>
+
+        <h4>Conversões de moeda:</h4>
+
+        <p><pre><code>
+          s.toLocaleString('pt-br',{style: 'currency',
+           currency:'BRL'})
+        </code></pre></p>
+
+        <h4>Conversões de string</h4>
+
+        <p><pre><code>
+           var s = 'JavaScript'
+           s.length         // quantos caracteres a string tem.
+           s.toUpperCase()  // tudo para 'MAIÚSCULAS'
+           s.toLowerCasa()  // tudo para 'minúsculas'
+        </code></pre></p>
+
+        <h5>number > String </h5>
+
+        <p><pre><code>
+          String(n)
+          n.toString()
+        </code></pre></p>
+
+        <h5>string  > number</h5>
+
+        <p><pre><code>
+          Number.parseint(n)
+          Number.parseFloat(n)
+          Number(n)
+        </code></pre></p>
+
+        <h5>number format</h5>
+
+        <p><pre><code>
+          n1 = 1545.5
+          n1.tofixed(2) = 1545.50
+          n1.tofixed(2).replace('.',',') = 1545,50
+        </code></pre></p>
+        <hr>
+
+        <h2>DOM: Document Object Model</h2>
+
+        <h3>Árvore DOM:</h3>
+        <p><img style="height: 400px;" src="../imagens/DOM/ARVORE.png" alt="Árvore DOM"></p>
+
+        <h3>Funções</h3>
+
+        <p><pre><code> 
+          function ação (param){
+
+          }
+        </code></pre></p>
+
+        <h3>Eventos DOM:</h3>
+
+        <p><img style="height: 400px;" src="../imagens/DOM/Eventos DOM.png" alt="Eventos DOM"></p>
+
+        <h3>Selecionando DOM:</h3>
+
+        <p><img style="height: 400px;" src="../imagens/DOM/selecionando.png" alt="Selecionando DOM"></p>
+
+        <hr>
+
+        <h2>Condições.</h2>
+
+        <h3>if else (se):</h3>
+
+        <p><pre><code>
+          if (condição) {
+              true
+          } else {
+              false
+          }
+        </code></pre></p>
+
+        <h3>if (if else) else: </h3>
+
+        <p><pre><code>
+          if (condição) {
+              true
+          } if else (condição) {
+              true
+          } else {
+              false
+          }
+        </code></pre></p>
+
+        <h3>Swith:</h3>
+
+        <p>
+          <pre><code>
+            var agora = new date()
+            var dias = agora.getUTDay()
+            var teste = 14
+
+            switch (dias) {
+              case 0:
+                  console.log('DOMINGO')
+              break
+              case 1:
+                  console.log('SEGUNDA')
+              break
+              case 2:
+                  console.log('TERÇA')
+              break
+              case 3:
+                  console.log('QUARTA')
+              break
+              case 4:
+                  console.log('QUINTA')
+              break             
+            }
+          </code></pre>
+        </p>
+
+        <hr>
+
+        <h2>Repetições</h2>
+
+        <h3>do While:</h3>
+
+        <p><pre><code>
+          do {
+
+          } while (condição)
+        </code></pre></p>
+
+        <h3>while</h3>
+
+        <p><pre><code>
+          var c=1
+
+          while(c<=10){
+
+
+            c++
+          }
+        </code></pre></p>
+
+        <h3>for</h3>
+
+        <p><pre><code>
+           for(var c=1; c<=10; c++ ){
+
+
+           }
+        </code></pre></p>
+
+        <hr>
+
+        <h2>Funções</h2>
+
+        <p><pre><code>
+          function ação(param){
+             return res
+          }
+
+          ação(5)
+        </code></pre></p>
+
+        <h3>Imagem Explicativa:</h3>
+        
+        <p><img style="height: 400px;" src="../imagens/Funçoes/function com parametro.png" alt="Funções Explicativa"></p>
+
+        <hr>
+
+        <h2>Variaveis Compostas</h2>
+
+        <h3>Variaveis Simples:</h3>
+        <p>só conseguem armazenar <strong>um valor</strong> por vez.</p>
+
+        <h3>Variaveis compostas:</h3>
+        <p>devem ser capazes de armazenar <strong>vários valores</strong>
+        em uma mesma estrutura.</p>
+
+        <h3>Comandos:</h3>
+         <p><pre><code>
+           let num= [5,8,4]
+
+  -num[3] = 6// Adiciona o valor na casa[3]
+  - num.push(7) // Adiciona o valor na ultima casa,
+  criando se for necessário.
+  - num.length  // Conta as casas.
+  - num.sort()  // deixa valores do menor para o maior
+  -num.indexOf(7)//retorna em qual caixa o numero [7]está[3]
+         </code></pre></p>
+
+         <h4>Corrigindo possiveis erros com num.sort():</h4>
+
+         <p><pre><code>
+           -let num = [16 ,1 ,2, 12, 3, 18,36,68,1]
+           -num.sort((a , b) => a - b)
+         </code></pre></p>
+
+         <h3>var composta explicada, array</h3>
+
+         <p><img style="height: 400px;" src="../imagens/var composta/var comp, expli, array.jpg" alt="var composta"></p>
+         <hr>
+
+         <h2>Adicionando Filhos a Elementos:</h2>
+
+         <h3>select:</h3>
+
+         <p><pre><code>
+                var L = document.createElement('option')
+                L.text = `Valor ${NUM} Adicionado`
+                list.appendChild(L)  
+                 lista.push(NUM)
+         </code></pre></p>
+         <hr>
+
+         <h2>video Aula Exercicio JS:</h2>
+         
+         <h4>Parte 1:</h4>
+         <p><iframe width="560" height="315" src="https://www.youtube.com/embed/vEOEZ03ZyiE?start=114" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+
+         <h4>Parte 2:</h4>
+         <p><iframe width="560" height="315" src="https://www.youtube.com/embed/slLoLLCd-k0?start=60" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+
+         <h4>Curso Completo:</h4>
+
+         <p><a href="https://www.cursoemvideo.com/curso/javascript/" target="_blanck" rel="nofollow">CursoemVideo JavaScript</a></p>
+
+        </main>
+
+         <hr>   
+         <hr>
+         <hr>
+         
+      <footer>
+        <p class="pfoot"> <a href="../index.html" target="_self" rel="prev">Pagina Anterior</a>  </p>
+        <strong>Click Para avaliar:</strong>  <input type="button" value="Avaliar" onclick="Avaliar()"><br><br>
+          <i>&copy;HudsonADRC</i>
+      </footer>
+
+       <script src="../JavaScript.js"></script> 
+</body>
+</html>
