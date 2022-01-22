@@ -18,8 +18,8 @@ body{
   overflow-x: hidden;
  }
       
-       .ahead{ font-size: 18px;  margin: 10px;}
-      .phead{ text-align: left; padding: 10px;}
+       .ahead{ font-size: 18px;   padding: 2px; margin: 1px;}
+      .phead{ text-align: left; padding: 2px; margin: 1px;}
 
       .pfoot{text-align: left; margin-top: -23px; margin-left: -50px;}
 
