@@ -207,11 +207,31 @@ iframe {
         width: 100%;
 }
 
+
 footer {
    background-image: linear-gradient(to top,#013769 20%,#01203d 50%,#011427 80%);
          color: rgb(226, 221, 221);
      padding: 30px;
      color: rgb(218, 212, 212);
      text-align: center;     
+}
+
+/** Background: **/
+
+div.quadrado {
+   border-radius: 10px;
+   border: 2px solid black;
+   height: 200px;
+   width: 200px;
+} 
+
+div#dv1 {
+ background-color: lightblue;
+}
+div#dv2 {
+  background-image: linear-gradient(to top, yellow, red);
+}
+div#dv3 {
+  background-image: url(imagens/pattern001.png);
 }
 
