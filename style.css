@@ -42,7 +42,8 @@ body{
          min-height: 150px; 
          padding-top: 25px;
         padding-bottom: 3px;
-
+        width: 100%;
+ 
       }
 
       hr {
@@ -95,7 +96,8 @@ body{
 
       section{
          text-align: center;
-         justify-content: center;       
+         justify-content: center;  
+         position: sticky;     
        }
        
        h2 {font-size: 23px;
@@ -123,6 +125,7 @@ h1{ text-align: center;
     font-size: 30px; 
     text-shadow: 10px 10px 20px hsla(0, 0%, 0%, 0.938);
     padding-bottom: 50px;
+    position: sticky;
    
 
 }
@@ -148,7 +151,7 @@ h1{ text-align: center;
 
    a:hover {
           font-size: 22px;
-          color: rgb(179, 48, 8);
+          color: #b33008;
    }
    
    h3 {margin: 7px;
@@ -172,6 +175,7 @@ h1{ text-align: center;
    p { margin-right: 15%;
        padding-left: 35px;
        padding-bottom: 10px;
+       text-indent: 20px;
 }
  dt {padding-left: 70px;}
  dd {padding-left: 70px;}
@@ -227,6 +231,7 @@ div.quadrado {
 
 div#dv1 {
  background-color: lightblue;
+ 
 }
 div#dv2 {
   background-image: linear-gradient(to top, yellow, red);
@@ -234,4 +239,5 @@ div#dv2 {
 div#dv3 {
   background-image: url(imagens/pattern001.png);
 }
+
 
