@@ -175,9 +175,13 @@ caption{
     
     }
 <h3>Cores Alternadas por linhas:</h3>
-tbody > tr:nth-child(2n) {
-    background-color: rgba(105, 104, 104, 0.699);
-    }
+tbody > tr:nth-child(even) {
+    background-color: white;
+    color: black;
+ }
+ tbody > tr:nth-child(odd) {
+    background-color: rgb(105, 104, 104);
+ }
 
 
       </code></pre></p>
