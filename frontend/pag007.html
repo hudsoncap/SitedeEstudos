@@ -66,103 +66,147 @@
             <h3>Exemplo:</h3>
             <pre><code>
 &lt;table>
-  &lt;caption>POPULAÇÃO das Unidades Federativas</caption>
-    &lt;thead>
-        &lt;tr>
-          &lt;th scope="col"> Estado</th>
-          &lt;th scope="col"> População</th>
-       &lt;/tr>
-    &lt;/thead>
-    &lt;tbody>
-        &lt;tr>
-          &lt;td>Paraná</td>
-          &lt;td class="numb">12546456</td>
-        &lt;/tr>
-        &lt;tr> 
-          &lt;td>Rio de Janeiro</td>
-          &lt;td class="numb">89455451</td>
-        &lt;/tr>
-        &lt;tr>
-            &lt;td>São Paulo</td>
-            &lt;td class="numb">945456544566</td>
-       &lt;/tr>
-    &lt;/tbody>
-    &lt;tfoot>
-        &lt;tr>
-           &lt;th scope="row">Total populacional</th>
-           &lt;td>xxxxxxxxxxx</td>
-       &lt;/tr>
-    &lt;/tfoot>
+  &lt;colgroup>
+    &lt;col class="area">
+    &lt;col class="Disciplinas">
+    &lt;col class="Notas">
+    &lt;col class="Média">
+  &lt;/colgroup>
+  &lt;caption>Tabela Escolar&lt;/caption>
+&lt;thead>
+    &lt;tr>
+        &lt;th scope="col" rowspan="2">Área&lt;/th>
+        &lt;th scope="col"  rowspan="2">Disciplinas&lt;/th>
+        &lt;th scope="colgroup"  colspan="2">Notas&lt;/th>
+        &lt;th scope="col"   rowspan="2">Média&lt;/th>
+&lt;/tr>
+    &lt;tr>
+        &lt;th>Nota 1&lt;/th>
+        &lt;th>Nota 2&lt;/th>
+    &lt;/tr>
+&lt;/thead>
+&lt;tbody>
+    &lt;tr>
+        &lt;th scope="rowgroup" class="area"rowspan="4">Exatas&lt;/th>
+        &lt;td>Matemática&lt;/td>
+        &lt;td>0.0&lt;/td>
+        &lt;td>0.0&lt;/td>
+        &lt;td>0.0&lt;/td>
+    &lt;/tr>
+    &lt;tr>
+        &lt;td>Física&lt;/td>
+        &lt;td>0.0&lt;/td>
+        &lt;td>0.0&lt;/td>
+        &lt;td>0.0&lt;/td>
+    &lt;/tr>
+    &lt;tr>
+        &lt;td>Química&lt;/td>
+        &lt;td>0.0&lt;/td>
+        &lt;td>0.0&lt;/td>
+        &lt;td>0.0&lt;/td>
+    &lt;/tr>
+    &lt;tr>
+        &lt;td>Biologia&lt;/td>
+        &lt;td>0.0&lt;/td>
+        &lt;td>0.0&lt;/td>
+        &lt;td>0.0&lt;/td>
+    &lt;/tr>
+    &lt;tr>
+        &lt;th scope="row" class="media" colspan="4" >Média de Exatas&lt;/th>
+        &lt;td class="media">0.0&lt;/td>
+    &lt;/tr>
+    &lt;tr>
+        &lt;th scope="rowgroup" class="area" rowspan="2">Humanas&lt;/th>
+        &lt;td>História&lt;/td>
+        &lt;td>0.0&lt;/td>
+        &lt;td>0.0&lt;/td>
+        &lt;td>0.0&lt;/td>
+    &lt;/tr>
+    &lt;tr>
+        &lt;td>Geografia&lt;/td>
+        &lt;td>0.0&lt;/td>
+        &lt;td>0.0&lt;/td>
+        &lt;td>0.0&lt;/td>                   
+    &lt;/tr>
+    &lt;tr>
+        &lt;th scope="row"class="media" colspan="4">Média de Humanas&lt;/th>
+        &lt;td class="media">0.0&lt;/td>
+    &lt;/tr>
+&lt;/tbody>
 
-&lt;/table>                           
+&lt;/table&lt;                         
             </code></pre>
         <h2>Tabela</h2>
 
-         <table>
-             <caption>POPULAÇÃO das Unidades Federativas</caption>
-                 <thead>
-                     <tr>
-                         <th scope="col"> Estado</th>
-                         <th scope="col"> População</th>
-                     </tr>
-                 </thead>
-                 <tbody>   
-                     <tr>
-                         <td>São Paulo</td>
-                         <td class="numb">46 649 132</td>
-                     </tr>
-                     <tr> 
-                         <td>Minas Gerais</td>
-                         <td class="numb">21 411 923</td>
-                     </tr>
-                     <tr> 
-                         <td>Rio de Janeiro</td>
-                         <td class="numb">17 463 349</td>
-                     </tr>
-                     <tr>
-                          <td>Bahia Bahia</td>
-                          <td class="numb">14 985 284</td>
-                     </tr>
-                     <tr>
-                         <td>Paraná</td>
-                         <td class="numb">11 597 484</td>
-                     </tr>
-                 </tbody>
-                 <tfoot>
-                       <tr>
-                           <th scope="row">Total populacional</th>
-                           <td class="numb">112.107.172</td>
-                       </tr>
-                 </tfoot>
-      </table>
+         <div class="divtabela">
+             <table>
+                 <caption>POPULAÇÃO das Unidades Federativas</caption>
+                     <thead>
+                         <tr>
+                             <th scope="col"> Estado</th>
+                             <th scope="col"> População</th>
+                         </tr>
+                     </thead>
+                     <tbody>
+                         <tr>
+                             <td>São Paulo</td>
+                             <td class="numb">46 649 132</td>
+                         </tr>
+                         <tr>
+                             <td>Minas Gerais</td>
+                             <td class="numb">21 411 923</td>
+                         </tr>
+                         <tr>
+                             <td>Rio de Janeiro</td>
+                             <td class="numb">17 463 349</td>
+                         </tr>
+                         <tr>
+                              <td>Bahia Bahia</td>
+                              <td class="numb">14 985 284</td>
+                         </tr>
+                         <tr>
+                             <td>Paraná</td>
+                             <td class="numb">11 597 484</td>
+                         </tr>
+                     </tbody>
+                     <tfoot>
+                           <tr>
+                               <th scope="row">Total populacional</th>
+                               <td class="numb">112.107.172</td>
+                           </tr>
+                     </tfoot>
+                   </table>
+         </div>
 
       <h2>Tabela com mesclagem</h2>
 
-      <table>
-        <tr> 
-            <td colspan="4">A</td>
-            <td rowspan="4">B</td>
-        </tr>
-        <tr>
-            <td rowspan="4">C</td>
-            <td>D</td>
-            <td>E</td>
-            <td>F</td>
-        </tr>
-        <tr>
-            <td>G</td>
-            <td>H</td>
-            <td>I</td>
-        </tr>
-        <tr>
-            <td>J</td>
-            <td>L</td>
-            <td>M</td>
-        </tr>
-        <tr>
-            <td colspan="4">N</td>
-        </tr>
-    </table>
+      <div class="divtabela">
+          <table>
+            <tr>
+                <td colspan="4">A</td>
+                <td rowspan="4">B</td>
+            </tr>
+            <tr>
+                <td rowspan="4">C</td>
+                <td>D</td>
+                <td>E</td>
+                <td>F</td>
+            </tr>
+            <tr>
+                <td>G</td>
+                <td>H</td>
+                <td>I</td>
+            </tr>
+            <tr>
+                <td>J</td>
+                <td>L</td>
+                <td>M</td>
+            </tr>
+            <tr>
+                <td colspan="4">N</td>
+            </tr>
+              </table>
+      </div>
 
         <h3>considerações:</h3>
 
@@ -177,6 +221,10 @@
         <h3>Mesclagem de tabelas</h3>
         <li>&lt;td colspan="2"&gt;(td ocupara "2" <strong>COLUNAS → </strong>)</li>
         <li>&lt;td rowspan="3"&gt;(td ocupara "3" <strong>LINHAS ↓ </strong>)</li>
+        <h3>Aplicando CSS em Colunas row esclusiva</h3>
+        <li>&lt;colgroup>  &lt;col class="nome" &gt;   &lt;/colgroup></li>
+        <li>&lt;colgroup>  &lt;col class="nome" span='2'&gt;(span espande o css para '2 colunas')   &lt;/colgroup></li>
+        <li>Para deixar a tabela responsiva a tela, envolope a tabela por uma &lt;div> e no css use overflow-x:auto;</li>
     </ul>
 
             

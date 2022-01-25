@@ -282,3 +282,7 @@ caption{
 
 }
 
+div.divtabela {
+     overflow-x: auto;
+}
+
