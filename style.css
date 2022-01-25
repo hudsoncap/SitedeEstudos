@@ -122,7 +122,7 @@ body{
 h1{ text-align: center;
     color: #fcfcfcfd;
     font-family: 'Press Start 2P', cursive;
-    font-size: 30px; 
+    font-size: 5vw; 
     text-shadow: 10px 10px 20px hsla(0, 0%, 0%, 0.938);
     padding-bottom: 50px;
     position: sticky;
@@ -134,12 +134,12 @@ h1{ text-align: center;
    h2 { 
         text-shadow: 5px 5px 10px rgba(2, 2, 75, 0.76);
         margin-left: 1px;
-
+        font-size: 3.5vw;
         font-family: 'Luxurious Roman', cursive;
         text-align: justify;
         color: #e0a605fd;
         padding-left: 15px;
-        background-attachment: ;
+        padding-bottom: 30px;
 
    }
 
@@ -156,7 +156,6 @@ h1{ text-align: center;
    }
    
    h3 {margin: 7px;
- 
       text-align: justify;
       color: #f3b713fd;
       padding-left: 20px;

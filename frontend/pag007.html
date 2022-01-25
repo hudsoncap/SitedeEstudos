@@ -57,6 +57,46 @@
 
             <p>border-collapse: collapse</p>
 
+            <h2>Tabelas Grandes:</h2>
+
+            <h3>Anatomia para Tabelas Grandes:</h3>
+            
+            <p>Table > thead(tr,td,th) > tbody(tr,td,th) tfoot(tr,td,th)</p>
+
+            <h3>Exemplo:</h3>
+            <pre><code>
+&lt;table>
+  &lt;caption>POPULAÇÃO das Unidades Federativas</caption>
+    &lt;thead>
+        &lt;tr>
+          &lt;th scope="col"> Estado</th>
+          &lt;th scope="col"> População</th>
+       &lt;/tr>
+    &lt;/thead>
+    &lt;tbody>
+        &lt;tr>
+          &lt;td>Paraná</td>
+          &lt;td class="numb">12546456</td>
+        &lt;/tr>
+        &lt;tr> 
+          &lt;td>Rio de Janeiro</td>
+          &lt;td class="numb">89455451</td>
+        &lt;/tr>
+        &lt;tr>
+            &lt;td>São Paulo</td>
+            &lt;td class="numb">945456544566</td>
+       &lt;/tr>
+    &lt;/tbody>
+    &lt;tfoot>
+        &lt;tr>
+           &lt;th scope="row">Total populacional</th>
+           &lt;td>xxxxxxxxxxx</td>
+       &lt;/tr>
+    &lt;/tfoot>
+
+&lt;/table>                           
+            </code></pre>
+
             
          </main>
           <hr>   
