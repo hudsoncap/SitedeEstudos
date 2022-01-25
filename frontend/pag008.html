@@ -55,9 +55,9 @@
           no-repeat(não repete)   
          </li>
          <li>
-             repeat-x(repete na vertical)
+             repeat-x(repete na Horizontal)
          </li>
-         <li>repeat-y(repete na Horizontal)</li>
+         <li>repeat-y(repete na vertical)</li>
      </ul>
 
      <h3>background-position:</h3>
@@ -134,13 +134,55 @@
 
       <p>o conteudo interno precisa ter um position:absolute;</p>
       <p>isso libera o comando: (top e left)</p>
-      <p>para colocar o valor no centro ultilizamos:</p>
+      <h3>Para colocar o valor no centro ultilizamos:</h3>
        <pre><code>
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 
 </code></pre>
+       
+<hr> 
+      <h2>CSS em Tabelas:</h2>
+
+      <p><pre><code>
+table {
+    width: 800px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    }
+    
+th, td, caption{
+        border: 2px solid rgb(255, 255, 255);
+        padding: 10px;    
+    }
+    
+td.numb{
+    text-align: right;
+    }
+    
+thead, tfoot {
+    background-color: black;
+    color: white;
+    }
+
+caption{
+    color: black;
+    background-color: rgba(128, 128, 128, 0.89);
+    padding: 10px;
+    font-family: fantasy;
+    font-size: 25px;
+    
+    }
+<h3>Cores Alternadas por linhas:</h3>
+tbody > tr:nth-child(2n) {
+    background-color: rgba(105, 104, 104, 0.699);
+    }
+
+
+      </code></pre></p>
+
+
     
      
 

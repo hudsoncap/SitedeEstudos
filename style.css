@@ -240,4 +240,38 @@ div#dv3 {
   background-image: url(imagens/pattern001.png);
 }
 
+table {
+   width: 800px;
+   font-family: Arial, Helvetica, sans-serif;
+   border-collapse: collapse;
+}
+
+th, td, caption{
+      border: 2px solid rgb(255, 255, 255);
+      padding: 10px;    
+}
+
+td.numb{
+   text-align: right;
+}
+
+thead, tfoot {
+   background-color: black;
+   color: white;
+}
+tbody > tr:nth-child(even) {
+   background-color: white;
+   color: black;
+}
+tbody > tr:nth-child(odd) {
+   background-color: rgb(105, 104, 104);
+}
+caption{
+   color: black;
+   background-color: rgba(128, 128, 128, 0.89);
+   padding: 10px;
+   font-family: fantasy;
+   font-size: 25px;
+
+}
 
