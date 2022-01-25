@@ -248,7 +248,7 @@ table {
 }
 
 th, td, caption{
-      border: 2px solid rgb(255, 255, 255);
+      border: 2px solid black;
       padding: 10px;    
 }
 
