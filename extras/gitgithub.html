@@ -22,7 +22,7 @@
 
          <main>
 
-          <h2>Comandos</h2>
+          <h2>Comandos terminal Git</h2>
 
           <ul>
             <li><strong>git config --global user.name "Hudson André dos Reis Cardoso"</strong>: configura o nome do Usuário</li>
@@ -45,6 +45,15 @@
            <li><strong>git shortlog -sn</strong>mostra a lista com o nome e a quantidade de logs dos usuários</li>
            <li><strong>git log --graph</strong>: mostra em forma grafica o que está acontecendo com os brants</li>
            <li><strong>git show "rash commit"</strong> verifica o que está acontecendo com essa commit</li>
+           <li><strong>git diff</strong>: Mostra as mudanças no arquivo log do git antes de commitar.</li>
+           <li><strong>git diff --name-only</strong>: Mostra os nomes dos arquivos modificados antes de commitar</li>
+           <li><strong>git commit -am "nome da modificação"</strong>commita o arquivo</li>
+           <li><strong>git checkout (nome do arquivo)</strong>reseta o arquivo a versão anterior antes de ser modificado.</li>
+           <li><strong>git reset HEAD (nome do arquivo)</strong>: Reseta o arquivo ao estado de "modificado" mesmo depois de ter sido adicionado a modificação.</li>
+           <li><strong>git reset --soft (hash)</strong>: vai pegar as modificaçoes reseta o commit, mas o arquivo volta pra stated, mas pronto pra ser comitado novamente.</li>
+           <li><strong>git reset --mixed (hash)</strong>: vai pegar as modificaçoes reseta o commit, mas o arquivo volta para modifited.</li>
+           <li><strong>git reset --hard (hash)</strong>: vai pegar as modificaçoes reseta o commit, e tudo o que foi modificado no arquivo.</li>
+           
           </ul>
 
 
