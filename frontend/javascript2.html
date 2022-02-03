@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link rel="shortcut icon" href="../imagens/logo3.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
+    <title>Estudos Java Script</title>
+</head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<body>
+      <header>
+      <h1>Estudo Java Script 2</h1>
+      <p class="phead">        
+        <p class="phead" style=""><a class="ahead" href="../index.html" target="_self" rel="prev">Pagina Inicial</a></p>
+
+       <p class="phead"> <a class="ahead" href="../frontend/css1.html" target="_self" rel="prev">Pagina de CSS</a> <p> 
+
+        <p class="phead"> <a class="ahead" href="../frontend/html1.html" target="_self" rel="prev">Pagina de HTML</a> </p>
+      </header>
+
+
+        <hr>   
+        <hr>
+        <hr>
+        <p style="text-align: left; padding: 5px 35px; " > <a href="../frontend/javascript1.html">JavaScript pag:1</a> </p>
+
+        <main>
+
+              <h2>Map e reduce</h2>
+               
+              <h3>Map</h3>
+
+              <p><strong>map:</strong> Percorre uma coleção e gera valores alterados dos seus itens.</p>
+
+              <p>map é melhor que while e if por que ele retorna uma nova lista, não altera a lista atual.</p>
+                <p><pre><code>
+    const produtos= [
+        { nome: "nootbook",
+            preco: 2100}, 
+        { nome: "celular",
+            preco: 400}, 
+    ]                   
+    const precoemreal   = produtos.map(p => p.preco *4)
+    console.log(precoemreal)  
+</code></pre></p>
+    <p>o Console irá retornar o preco do produto * 4: <strong>[8400, 1600]</strong></p>
+
+                
+               <h3>reduce</h3>
+
+              <p><Strong>Reduce:</Strong> Percorre uma coleção e gera alguma informação dela ex: Soma de valores de todos produtos.</p>
+
+              <p>reduce é melhor que while e if por que ele retorna uma nova lista, não altera a lista atual.</p>
+
+              <code>
+                  <pre>
+    const produtos= [
+    { nome: "nootbook",
+    preco: 2100},
+    { nome: "celular",
+    preco: 400},
+        ]
+            const total   = produtos.reduce((a,b) => a+b.preco , 0)
+            console.log(total)
+                  </pre>
+              </code>
+          <p><br>o Console irá retornar o preco de todos produtos somados: <strong>[2500]</strong></p>
+
+          <h3>também podemos usar map e reduce juntos.</h3>
+
+          <p><pre><code>
+const produtos= [
+    { nome: "nootbook",
+    preco: 2100}, 
+    { nome: "celular",
+    preco: 400}, 
+    ]                   
+const total   = produtos.map(p => p.preco * 4).reduce((a,b) => a+b,0)
+console.log(total)   
+        </code></pre></p>
+
+        <p><br>o Console irá retornar o preco de todos produtos somados e convertidos: <strong>[10000]</strong></p>
+
+
+
+<hr>
+
+       <h2>Add e remove Class e Ocultando itens JavaScript </h2>
+
+       <pre><code>
+        var allbtn =document.querySelector('#all-btn')
+        var devbtn =document.querySelector('#dev-btn')
+        var dsgbtn =document.querySelector('#dsg-btn')
+        var seobtn =document.querySelector('#seo-btn')
+        var imgdev =document.querySelector('.dev')
+        var imgdsg =document.querySelector('.dsg')
+        var imgseo =document.querySelector('.seo')
+        
+        allbtn.addEventListener('click', function(){
+        
+              allbtn.classList.add('active')
+              devbtn.classList.remove('active')
+              dsgbtn.classList.remove('active')
+              seobtn.classList.remove('active')
+             
+             if(allbtn.classList.contains("active")){
+              imgdev.style.display = 'block',
+              imgdsg.style.display = 'block',
+              imgseo.style.display = 'block',
+              imgdev1.style.display = 'none',
+              imgdsg1.style.display = 'none',
+              imgseo1.style.display = 'none'
+              
+        
+             } 
+        });
+        
+       </code></pre>
+        </main>
+
+         <hr>   
+         <hr>
+         <hr>
+         
+      <footer>
+        <p class="pfoot"> <a href="javascript1.html" target="_self" rel="prev">Pagina Anterior</a>  </p>
+        <strong>Click Para avaliar:</strong>  <input type="button" value="Avaliar" onclick="Avaliar()"><br><br>
+          <i>&copy;HudsonADRC</i>
+      </footer>
+
+       <script src="../JavaScript.js"></script> 
+</body>
+</html>
